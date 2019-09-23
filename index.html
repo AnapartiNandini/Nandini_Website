@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--
+    Name: Nandini Anaparti
+    Course: Software Development
+    Teacher: Mr. Hardman
+    School: Pembina Trails Early College
+    Date Last Modified: 9/22/2019
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>HomePage</title>
+    <style>
+        /*
+            The background of the window is an image from pixabay.com, with a size of 1390px by 910px positioned from 
+            the top left corner of the window.
+        */
+        body {
+            background: url("https://cdn.pixabay.com/photo/2013/11/28/10/03/autumn-219972_1280.jpg");
+            background-size: 1390px 910px;
+            background-position: left top ;
+        }
+
+        /*
+            The text/content in the header will be styled so that the font type is Times New Roman, with a font-size of 30px.
+            The background of this section will be black with and opacity of 0.8 to give a fading effect.
+            The space around the text is known as padding. The padding above the text is 10px. The text is white and aligned in the center.
+        */
+        header {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:30px;
+            background: rgba(0,0,0,0.8);
+            padding-top: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /*
+            The space around the text/content is known as padding. The padding above the contents of the unordered list is 10px.
+            The background of this section will be black with and opacity of 0.8 to give a fading effect.
+        */
+        ul {
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        /*
+            The text/content in the list elements will be styled so that the font type is Times New Roman, with a font-size of 28px.
+            The display type is inline, meaning that the line elements will be displayed in the current block on the same line.
+            The space around the text is known as padding. The padding the text is 0px by 10px by 0px by 10px.
+        */
+        li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:28px;
+            display: inline;
+            padding: 0px 10px 0px 10px;            
+        }
+
+        /*
+            The text/content in the heading(type 3) will be styled so that the font type is Times New Roman, with a font-size of 28px.
+            The background of this section will be black with and opacity of 0.8 to give a fading effect.
+            The space around the text is known as padding. The padding above as well as below the text are both 10px each . 
+            The text is white and aligned in the center.
+        */
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:28px;
+            color: white;
+            background:rgba(0,0,0,0.8);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /*
+            The text/content in the paragraphs will be styled so that the font type is Times New Roman, with a font-size of 23px.
+            The background of this section will be black with and opacity of 0.8 to give a fading effect.
+            The space around the text is known as padding. The padding is 10px in general but in addition to that, 
+            the padding above as well as below the text are both 20px each. 
+            The text is white and aligned as justify.
+        */
+        p {
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:23px;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background:rgba(0,0,0,0.8); 
+            color: white;
+        }
+
+        /*
+            The color of the anchor links should be white with out any text decoration, 
+            both before and after they have been visited.
+        */
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        /*
+            When the mouse hovers over the anchor links the links should become underlined 
+            indicationg that the mouse is hovering over them.
+        */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /*
+            When the device or browser width is at max. 500px, then the font size of both header 1 and 2 will become 36px.
+            The padding for header 1 and 2, line elements and paragraph elemnts will become 5px. 
+            As well as, the diplay of the line element, insted of being inline will become formatted in block type.
+        */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+            h2 {
+                font-size: 36px;
+                padding: 5px;
+            }
+
+            li {
+                padding: 5px;
+                display: block;
+            }
+            
+            p {
+                padding: 5px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nandini's World</h1>
+        <h2>Home Page</h2>
+        
+        <ul>
+            <li><a href="books_read.html" target="_blank"><b>Books Read</b></a></li>
+            <li><a href="books_reading.html" target="_blank"><b>Books Reading</b></a></li>
+            <li><a href="recommendations.html" target="_blank"><b>Recommendations</b></a></li>
+        </ul>
+
+    </header>
+    <center>
+        <h3>
+            <b>Purpose of This Site</b>
+        </h3>
+
+        <p>
+            This is my personal website which is used as a Book Log. The section <i>"Books Read"</i> lists all the books this year which I have read.
+            The section <i>"Books Reading"</i> lists all the books I'm currently reading. The final section, <i>"Recommedations"</i> is a section for 
+            viewers to post their book reccomendations for others. This website is like a community where nobody is
+            critized for their choice of reading. Now, why don't you go on ahead and explore this site.
+        </p>
+    </center>
+    
+</body>
+</html>

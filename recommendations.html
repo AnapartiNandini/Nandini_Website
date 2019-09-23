@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Recommendations</title>
+    <style>
+        /*
+            The text/content in the body section of the code will be aligned in the center
+        */
+        body {
+            text-align: center;
+        }
+
+        /*
+            The text/content in the textarea section of the code will be aligned in the center.
+            The font type of the text/content is Times New Roman and the font size is 20px.
+            This section has a solid-thick black border with 0px(No Margin) as it margin.
+            The space around the text is known as padding. The padding is 10px
+        */
+        textarea {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: thick solid;
+            padding: 10px;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        
+        /*
+            The text/content in the submit input type will be aligned in the center.
+            The font type of the text/content is Times New Roman.
+            The background of this input type is a light green color, indicated in rgb format below.
+            The color of the text is black. The space around the text is known as padding. The padding is 5px
+        */
+        input[type="submit"] {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background: rgb(76, 255, 0);
+            color: black;
+            padding: 5px;
+        }
+
+        /*
+            The text/content in the text input type will be aligned in the center.
+            The font type of the text/content is Times New Roman.
+            This section has a solid black border. The space around the text is known as padding. The padding is 10px
+        */
+        input[type="text"] {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: solid;
+            padding: 10px;
+        }
+         /*
+            The text/content in the email input type will be aligned in the center.
+            The font type of the text/content is Times New Roman.
+            This section has a solid black border. The space around the text is known as padding. The padding is 10px
+        */
+        input[type="email"] {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: solid;
+            padding: 10px;
+        }
+         /*
+            The text/content in the date input type will be aligned in the center.
+            The font type of the text/content is Times New Roman.
+            This section has a solid black border. The space around the text is known as padding. The padding is 10px
+        */
+        input[type="date"] {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommendations</h1><br/>
+    <!--
+        In this form, the user can has to primarily indicate their name followed by entering their email
+        after which they will have to input the date of the day they are writing their response.
+    -->
+    <form method="get">
+        <label><input type="text" name="name" placeholder="Please enter your name" size="30" maxlength="30" id="name" /></label>
+        <label><input type="email" name="email" placeholder="Please enter your email address" size="100" maxlength="100" id="email" /></label><br /><br />
+
+        Today's Date:
+        <label><input type="date" name="Present Date" placeholder="Please enter the current date" id="date" /></label>
+        
+        <!--
+            The test "Response" is improperly indented, I know. This is because is I were to properly indent it, the extra space
+            is effecting the center alignment of "Response". It's not a mistake, it's simply required. 
+            Thank you for understanding.
+        -->
+        <label>
+              <br/><br/><textarea rows="10" cols="70" name="response" id="response" >
+Response
+              </textarea>
+        </label><br/><br/>
+
+        <label><input type="submit" value="Submit" /></label>
+    </form>
+
+</body>
+</html>
